@@ -1,0 +1,44 @@
+*cache/
+*sim/
+*runs/
+#*ip_user_files/
+#*hw/
+
+*
+!*/
+!.gitignore
+!*.tcl
+
+#Vivado
+!*.vhd
+!*.v
+#Block Diagrams
+!*.bd
+#Electronic Design Interchange Format (e.g. netlists, schematics)
+!*.edif
+#Vivado Project Files
+!*.xpr
+#Board Pin File
+!*.xdc
+
+#Processor
+!*.c
+!*.h
+!*.ld
+!*.elf
+!Makefile
+!makefile
+!.mk
+
+#Documentation
+!*.txt
+!*.md
+!*.org
+!*.html
+
+!*.ui
+!*.ooc
+!*.xci
+!*.dcp
+!*.vds
+!*.pb
