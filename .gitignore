@@ -1,6 +1,4 @@
-*cache/
-*sim/
-*runs/
+
 #*ip_user_files/
 #*hw/
 
@@ -36,9 +34,13 @@
 !*.org
 !*.html
 
-!*.ui
-!*.ooc
-!*.xci
-!*.dcp
-!*.vds
-!*.pb
+# !*.ui
+# !*.ooc
+# !*.xci
+# !*.dcp
+# !*.vds
+# !*.pb
+
+*cache/
+*sim/
+*runs/
