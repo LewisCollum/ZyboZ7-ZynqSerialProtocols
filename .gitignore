@@ -1,4 +1,3 @@
-
 #*ip_user_files/
 #*hw/
 
@@ -24,9 +23,9 @@
 !*.h
 !*.ld
 !*.elf
-!Makefile
-!makefile
-!.mk
+# !Makefile
+# !makefile
+# !*.mk
 
 #Documentation
 !*.txt
@@ -44,9 +43,11 @@
 # !*.dcp
 # !*.vds
 # !*.pb
+!*.bit
 
 *cache/
 *sim/
 *runs/
-*bsp/
+# *bsp/
 ipshared/
+.metadata/
