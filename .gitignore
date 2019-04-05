@@ -7,7 +7,7 @@
 !.gitignore
 !*.tcl
 
-#Vivado
+#VIVADO
 !*.vhd
 !*.v
 #Block Diagrams
@@ -34,9 +34,13 @@
 !*.org
 !*.html
 
-# !*.ui
-# !*.ooc
-# !*.xci
+!*.include
+#IP Core Container
+!*.xcix
+#Block graphic location and comments
+!*.ui
+#IP 
+!*.xci
 # !*.dcp
 # !*.vds
 # !*.pb
