@@ -31,7 +31,7 @@
 !*.txt
 !*.md
 !*.org
-!*.html
+#!*.html
 
 !*.include
 #IP Core Container
