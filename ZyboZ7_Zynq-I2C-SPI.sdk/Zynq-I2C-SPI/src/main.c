@@ -10,10 +10,9 @@ enum YML40Channel {
 } channel;
 
 enum State {
-	waiting, sending, fetching
+	sampling, sendToLCD, sendTo7Segment
 } state;
 
-XIicPs i2cController;
 unsigned char adcSample;
 
 
@@ -23,7 +22,19 @@ void setup() {
 }
 
 void run() {
-	adcSample = pcfADC_getSample();
+	switch(state) {
+	case sampling:
+		adcSample = pcfADC_getSample();
+		break;
+
+	case sendToLCD:
+		state = sampling;
+		break;
+
+	case sendTo7Segment:
+		state = sampling;
+		break;
+	}
 }
 
 int main() {
