@@ -45,13 +45,9 @@ void timer_setup()
 
 	XTmrCtr_SetHandler(&TimerCounterInst, SPI_write_interrupt_handler, &TimerCounterInst);
 	XTmrCtr_SetOptions(&TimerCounterInst, 0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
-	XTmrCtr_SetOptions(&TimerCounterInst, 1, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
 
 	XTmrCtr_SetResetValue(&TimerCounterInst, 0, RESET_VALUE_SPI);
 	XTmrCtr_Start(&TimerCounterInst, 0);
-
-	XTmrCtr_SetResetValue(&TimerCounterInst, 1, RESET_VALUE_LCD);
-	XTmrCtr_Start(&TimerCounterInst, 1);
 
 	timer_interrupt_disable();
 	return;
