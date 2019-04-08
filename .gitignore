@@ -17,12 +17,15 @@
 !*.xpr
 #Board Pin File
 !*.xdc
+!*.hdf
 
 #Processor
 !*.c
 !*.h
 !*.ld
 !*.elf
+#Xilinx SDK Project Definition
+!*.spec
 # !Makefile
 # !makefile
 # !*.mk
