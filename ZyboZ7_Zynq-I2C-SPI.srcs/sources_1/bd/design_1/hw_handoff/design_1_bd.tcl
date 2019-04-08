@@ -698,8 +698,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_gpio_1/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
 
   # Create port connections
-  connect_bd_net -net Net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins lcd_0/busy] [get_bd_pins lcd_0/command_mode] [get_bd_pins lcd_0/data_in] [get_bd_pins lcd_0/enable]
-  connect_bd_net -net axi_gpio_0_ip2intc_irpt [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins ila_0/probe5] [get_bd_pins processing_system7_0/IRQ_F2P]
+  connect_bd_net -net Net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins ila_0/probe1] [get_bd_pins lcd_0/busy] [get_bd_pins lcd_0/command_mode] [get_bd_pins lcd_0/data_in] [get_bd_pins lcd_0/enable]
   connect_bd_net -net lcd_0_data [get_bd_pins lcd_0/data] [get_bd_pins pmod_bridge_0/in0_O]
   connect_bd_net -net lcd_0_lcd_e [get_bd_pins lcd_0/lcd_e] [get_bd_pins pmod_bridge_0/in2_O]
   connect_bd_net -net lcd_0_lcd_rs [get_bd_pins lcd_0/lcd_rs] [get_bd_pins pmod_bridge_0/in1_O]

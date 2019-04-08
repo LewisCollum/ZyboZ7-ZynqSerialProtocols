@@ -1,6 +1,7 @@
 #include "xparameters.h"
 #include "xiicps.h"
 #include "adc_pcf8591.h"
+#include "lcd.h"
 
 #include "xspips.h"
 #include "xscugic.h"
@@ -60,6 +61,7 @@ void setup() {
 //	XSpiPs_Transfer((XSpiPs*) &SpiInstance, &send, &receive, 1);
 	send = 0x76;
 	XSpiPs_PolledTransfer((XSpiPs*) &SpiInstance, &send, NULL, 1);
+	lcd_init();
 }
 
 void run() {

@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Mon Apr  8 15:26:47 2019
+--Date        : Mon Apr  8 16:11:03 2019
 --Host        : UL-41 running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1634,7 +1634,6 @@ architecture STRUCTURE of design_1 is
   end component design_1_pmod_bridge_0_0;
   signal Net : STD_LOGIC;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
   signal lcd_0_data : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal lcd_0_lcd_e : STD_LOGIC;
   signal lcd_0_lcd_rs : STD_LOGIC;
@@ -1775,6 +1774,7 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M02_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M02_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_axi_gpio_0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_generateout0_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_generateout1_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_interrupt_UNCONNECTED : STD_LOGIC;
@@ -1870,7 +1870,7 @@ begin
 axi_gpio_0: component design_1_axi_gpio_0_0
      port map (
       gpio_io_i(3 downto 0) => axi_gpio_0_GPIO_TRI_I(3 downto 0),
-      ip2intc_irpt => axi_gpio_0_ip2intc_irpt,
+      ip2intc_irpt => NLW_axi_gpio_0_ip2intc_irpt_UNCONNECTED,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -1957,7 +1957,38 @@ ila_0: component design_1_ila_0_0
      port map (
       clk => processing_system7_0_FCLK_CLK0,
       probe0(0) => '0',
-      probe1(31 downto 0) => B"00000000000000000000000000000000",
+      probe1(31) => Net,
+      probe1(30) => Net,
+      probe1(29) => Net,
+      probe1(28) => Net,
+      probe1(27) => Net,
+      probe1(26) => Net,
+      probe1(25) => Net,
+      probe1(24) => Net,
+      probe1(23) => Net,
+      probe1(22) => Net,
+      probe1(21) => Net,
+      probe1(20) => Net,
+      probe1(19) => Net,
+      probe1(18) => Net,
+      probe1(17) => Net,
+      probe1(16) => Net,
+      probe1(15) => Net,
+      probe1(14) => Net,
+      probe1(13) => Net,
+      probe1(12) => Net,
+      probe1(11) => Net,
+      probe1(10) => Net,
+      probe1(9) => Net,
+      probe1(8) => Net,
+      probe1(7) => Net,
+      probe1(6) => Net,
+      probe1(5) => Net,
+      probe1(4) => Net,
+      probe1(3) => Net,
+      probe1(2) => Net,
+      probe1(1) => Net,
+      probe1(0) => Net,
       probe10(31 downto 0) => B"00000000000000000000000000000000",
       probe11(0) => '0',
       probe12(0) => '0',
@@ -1995,38 +2026,7 @@ ila_0: component design_1_ila_0_0
       probe41(0) => '0',
       probe42(0) => '0',
       probe43(0) => '0',
-      probe5(31) => axi_gpio_0_ip2intc_irpt,
-      probe5(30) => axi_gpio_0_ip2intc_irpt,
-      probe5(29) => axi_gpio_0_ip2intc_irpt,
-      probe5(28) => axi_gpio_0_ip2intc_irpt,
-      probe5(27) => axi_gpio_0_ip2intc_irpt,
-      probe5(26) => axi_gpio_0_ip2intc_irpt,
-      probe5(25) => axi_gpio_0_ip2intc_irpt,
-      probe5(24) => axi_gpio_0_ip2intc_irpt,
-      probe5(23) => axi_gpio_0_ip2intc_irpt,
-      probe5(22) => axi_gpio_0_ip2intc_irpt,
-      probe5(21) => axi_gpio_0_ip2intc_irpt,
-      probe5(20) => axi_gpio_0_ip2intc_irpt,
-      probe5(19) => axi_gpio_0_ip2intc_irpt,
-      probe5(18) => axi_gpio_0_ip2intc_irpt,
-      probe5(17) => axi_gpio_0_ip2intc_irpt,
-      probe5(16) => axi_gpio_0_ip2intc_irpt,
-      probe5(15) => axi_gpio_0_ip2intc_irpt,
-      probe5(14) => axi_gpio_0_ip2intc_irpt,
-      probe5(13) => axi_gpio_0_ip2intc_irpt,
-      probe5(12) => axi_gpio_0_ip2intc_irpt,
-      probe5(11) => axi_gpio_0_ip2intc_irpt,
-      probe5(10) => axi_gpio_0_ip2intc_irpt,
-      probe5(9) => axi_gpio_0_ip2intc_irpt,
-      probe5(8) => axi_gpio_0_ip2intc_irpt,
-      probe5(7) => axi_gpio_0_ip2intc_irpt,
-      probe5(6) => axi_gpio_0_ip2intc_irpt,
-      probe5(5) => axi_gpio_0_ip2intc_irpt,
-      probe5(4) => axi_gpio_0_ip2intc_irpt,
-      probe5(3) => axi_gpio_0_ip2intc_irpt,
-      probe5(2) => axi_gpio_0_ip2intc_irpt,
-      probe5(1) => axi_gpio_0_ip2intc_irpt,
-      probe5(0) => axi_gpio_0_ip2intc_irpt,
+      probe5(31 downto 0) => B"00000000000000000000000000000000",
       probe6(0) => '0',
       probe7(0) => '0',
       probe8(0) => '0',
@@ -2122,7 +2122,7 @@ processing_system7_0: component design_1_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(0) => axi_gpio_0_ip2intc_irpt,
+      IRQ_F2P(0) => '0',
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),

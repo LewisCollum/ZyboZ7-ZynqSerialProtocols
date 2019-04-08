@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Mon Apr  8 15:29:07 2019
 // Host        : UL-41 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/ulab/Documents/project_5/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_pc_0 -prefix
+//               design_1_auto_pc_0_ design_1_auto_pc_0_stub.v
 // Design      : design_1_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
