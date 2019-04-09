@@ -4,6 +4,8 @@
 *
 !*/
 !.gitignore
+!.project
+!.cproject
 !*.tcl
 
 #VIVADO
@@ -19,16 +21,32 @@
 !*.xdc
 !*.hdf
 
+#IP
+!*.txt
+!*.xml
+!*.xci
+!*.doc
+!*.pdf
+!*.mdd
+!*.hwdef
+!*.xit
+!*.sv
+
+
+
 #Processor
 !*.c
 !*.h
+!*.o
+!*.d
 !*.ld
 !*.elf
 #Xilinx SDK Project Definition
 !*.spec
-# !Makefile
-# !makefile
-# !*.mk
+!Makefile
+!makefile
+!*.mk
+!*.size
 
 #Documentation
 !*.txt
