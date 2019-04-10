@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Tue Apr  9 14:22:57 2019
+--Date        : Tue Apr  9 14:52:40 2019
 --Host        : UL-31 running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1471,6 +1471,7 @@ architecture STRUCTURE of design_1 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
+    ip2intc_irpt : out STD_LOGIC;
     gpio_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1_axi_gpio_0_0;
@@ -1599,6 +1600,7 @@ architecture STRUCTURE of design_1 is
   );
   end component design_1_lcd_controller_0_0;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
   signal lcd_controller_0_data : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal lcd_controller_0_lcd_e : STD_LOGIC;
   signal lcd_controller_0_lcd_rs : STD_LOGIC;
@@ -1836,6 +1838,7 @@ begin
 axi_gpio_0: component design_1_axi_gpio_0_0
      port map (
       gpio_io_i(3 downto 0) => axi_gpio_0_GPIO_TRI_I(3 downto 0),
+      ip2intc_irpt => axi_gpio_0_ip2intc_irpt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -1984,7 +1987,7 @@ processing_system7_0: component design_1_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(0) => '0',
+      IRQ_F2P(0) => axi_gpio_0_ip2intc_irpt,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),

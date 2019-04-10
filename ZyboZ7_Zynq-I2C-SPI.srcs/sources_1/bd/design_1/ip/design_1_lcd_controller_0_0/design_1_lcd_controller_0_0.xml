@@ -581,11 +581,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 18:13:17 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 09 18:52:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4044e661</spirit:value>
+            <spirit:value>9:b2decba6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -601,11 +601,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 18:13:17 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 09 18:52:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4044e661</spirit:value>
+            <spirit:value>9:b2decba6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -621,11 +621,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 18:13:17 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 09 18:52:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:db2220cf</spirit:value>
+            <spirit:value>9:29b80d08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -641,11 +641,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 18:13:17 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 09 18:52:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:db2220cf</spirit:value>
+            <spirit:value>9:29b80d08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -659,11 +659,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 18:13:48 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 09 18:53:11 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4044e661</spirit:value>
+            <spirit:value>9:b2decba6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1057,19 +1057,19 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/src/clock_enabler.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/src/clock_enabler.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/src/lcd.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/src/lcd.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/hdl/lcd_controller_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/hdl/lcd_controller_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/hdl/lcd_controller_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/hdl/lcd_controller_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1084,19 +1084,19 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/src/clock_enabler.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/src/clock_enabler.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/src/lcd.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/src/lcd.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/hdl/lcd_controller_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/hdl/lcd_controller_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3f7e/hdl/lcd_controller_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/5f16/hdl/lcd_controller_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1205,7 +1205,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>lcd_controller_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@41c9193e_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ip_repo/lcd_controller_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@9b986c6_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ip_repo/lcd_controller_1.0</xilinx:tag>
@@ -1238,6 +1238,23 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@531a6141_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@74091a44_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@36978518_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ce64bb6_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43c81914_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f22450_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d3aba5d_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a929a75_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a5b5777_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cd3f1df_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d732d81_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@774e7a8c_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58d89f3_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1927f579_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40fbe878_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bc9cb47_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15daf38b_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515d8b53_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11503f55_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f6ae4f1_ARCHIVE_LOCATION">c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ip_repo/lcd_controller_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -1272,7 +1289,7 @@
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="85a9345c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9702342f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6860f3b8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="dfa2f4d6"/>

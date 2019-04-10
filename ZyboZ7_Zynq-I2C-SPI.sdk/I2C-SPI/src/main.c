@@ -5,6 +5,7 @@
 #include "xspips.h"
 #include "xscugic.h"
 #include "xil_exception.h"
+#include "lcd.h"
 
 #define i2cControllerDeviceId XPAR_XIICPS_0_DEVICE_ID
 #define i2cSlaveAddress 0x48
@@ -51,7 +52,7 @@ void setup() {
 
 	XSpiPs_SetOptions((XSpiPs*) &SpiInstance, XSPIPS_MASTER_OPTION);
 	XSpiPs_SetClkPrescaler((XSpiPs*) &SpiInstance, XSPIPS_CLK_PRESCALE_256);
-//	XSpiPs_SetSlaveSelect((XSpiPs*) &SpiInstance, 0);
+	XSpiPs_SetSlaveSelect((XSpiPs*) &SpiInstance, 0);
 
 //	send = 0x7F;
 //	XSpiPs_Transfer((XSpiPs*) &SpiInstance, &send, &receive, 1);
@@ -60,6 +61,10 @@ void setup() {
 //	XSpiPs_Transfer((XSpiPs*) &SpiInstance, &send, &receive, 1);
 	send = 0x76;
 	XSpiPs_PolledTransfer((XSpiPs*) &SpiInstance, &send, NULL, 1);
+	while (1)
+	{
+	lcd_init();
+	}
 }
 
 void run() {
@@ -90,4 +95,3 @@ int main() {
   while(1) run();
   return 0;
 }
-

@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Apr  9 14:13:48 2019
+// Date        : Tue Apr  9 14:53:10 2019
 // Host        : UL-31 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.srcs/sources_1/bd/design_1/ip/design_1_lcd_controller_0_0/design_1_lcd_controller_0_0_stub.v

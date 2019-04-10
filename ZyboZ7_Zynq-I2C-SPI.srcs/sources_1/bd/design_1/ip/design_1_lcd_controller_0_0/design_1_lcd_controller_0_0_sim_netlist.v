@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Apr  9 14:13:48 2019
+// Date        : Tue Apr  9 14:53:10 2019
 // Host        : UL-31 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.srcs/sources_1/bd/design_1/ip/design_1_lcd_controller_0_0/design_1_lcd_controller_0_0_sim_netlist.v
@@ -237,7 +237,6 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
   wire axi_bvalid_i_1_n_0;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
-  wire enable;
   wire [1:0]p_0_in;
   wire [31:7]p_1_in;
   wire [31:0]reg_data_out;
@@ -255,11 +254,11 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
   wire [31:0]s00_axi_wdata;
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
+  wire [7:0]slv_reg0;
   wire \slv_reg0[15]_i_1_n_0 ;
   wire \slv_reg0[23]_i_1_n_0 ;
   wire \slv_reg0[31]_i_1_n_0 ;
   wire \slv_reg0[7]_i_1_n_0 ;
-  wire \slv_reg0_reg_n_0_[0] ;
   wire \slv_reg0_reg_n_0_[10] ;
   wire \slv_reg0_reg_n_0_[11] ;
   wire \slv_reg0_reg_n_0_[12] ;
@@ -270,7 +269,6 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
   wire \slv_reg0_reg_n_0_[17] ;
   wire \slv_reg0_reg_n_0_[18] ;
   wire \slv_reg0_reg_n_0_[19] ;
-  wire \slv_reg0_reg_n_0_[1] ;
   wire \slv_reg0_reg_n_0_[20] ;
   wire \slv_reg0_reg_n_0_[21] ;
   wire \slv_reg0_reg_n_0_[22] ;
@@ -281,20 +279,16 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
   wire \slv_reg0_reg_n_0_[27] ;
   wire \slv_reg0_reg_n_0_[28] ;
   wire \slv_reg0_reg_n_0_[29] ;
-  wire \slv_reg0_reg_n_0_[2] ;
   wire \slv_reg0_reg_n_0_[30] ;
   wire \slv_reg0_reg_n_0_[31] ;
-  wire \slv_reg0_reg_n_0_[3] ;
-  wire \slv_reg0_reg_n_0_[4] ;
-  wire \slv_reg0_reg_n_0_[5] ;
-  wire \slv_reg0_reg_n_0_[6] ;
-  wire \slv_reg0_reg_n_0_[7] ;
+  wire \slv_reg0_reg_n_0_[8] ;
   wire \slv_reg0_reg_n_0_[9] ;
-  wire [31:0]slv_reg1;
+  wire [31:1]slv_reg1;
   wire \slv_reg1[15]_i_1_n_0 ;
   wire \slv_reg1[23]_i_1_n_0 ;
   wire \slv_reg1[31]_i_1_n_0 ;
   wire \slv_reg1[7]_i_1_n_0 ;
+  wire \slv_reg1_reg_n_0_[0] ;
   wire [31:0]slv_reg2;
   wire \slv_reg2[15]_i_1_n_0 ;
   wire \slv_reg2[23]_i_1_n_0 ;
@@ -432,8 +426,8 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
   LUT6 #(
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[0]_i_1 
-       (.I0(slv_reg1[0]),
-        .I1(\slv_reg0_reg_n_0_[0] ),
+       (.I0(\slv_reg1_reg_n_0_[0] ),
+        .I1(slv_reg0[0]),
         .I2(slv_reg3[0]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -543,7 +537,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[1]_i_1 
        (.I0(slv_reg1[1]),
-        .I1(\slv_reg0_reg_n_0_[1] ),
+        .I1(slv_reg0[1]),
         .I2(slv_reg3[1]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -653,7 +647,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[2]_i_1 
        (.I0(slv_reg1[2]),
-        .I1(\slv_reg0_reg_n_0_[2] ),
+        .I1(slv_reg0[2]),
         .I2(slv_reg3[2]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -690,7 +684,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[3]_i_1 
        (.I0(slv_reg1[3]),
-        .I1(\slv_reg0_reg_n_0_[3] ),
+        .I1(slv_reg0[3]),
         .I2(slv_reg3[3]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -700,7 +694,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[4]_i_1 
        (.I0(slv_reg1[4]),
-        .I1(\slv_reg0_reg_n_0_[4] ),
+        .I1(slv_reg0[4]),
         .I2(slv_reg3[4]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -710,7 +704,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[5]_i_1 
        (.I0(slv_reg1[5]),
-        .I1(\slv_reg0_reg_n_0_[5] ),
+        .I1(slv_reg0[5]),
         .I2(slv_reg3[5]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -720,7 +714,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[6]_i_1 
        (.I0(slv_reg1[6]),
-        .I1(\slv_reg0_reg_n_0_[6] ),
+        .I1(slv_reg0[6]),
         .I2(slv_reg3[6]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -730,7 +724,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[7]_i_1 
        (.I0(slv_reg1[7]),
-        .I1(\slv_reg0_reg_n_0_[7] ),
+        .I1(slv_reg0[7]),
         .I2(slv_reg3[7]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -740,7 +734,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
     .INIT(64'hF0AAFFCCF0AA00CC)) 
     \axi_rdata[8]_i_1 
        (.I0(slv_reg1[8]),
-        .I1(enable),
+        .I1(\slv_reg0_reg_n_0_[8] ),
         .I2(slv_reg3[8]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -1003,14 +997,6 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
         .I3(s00_axi_wstrb[3]),
         .O(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
-    .INIT(16'h8000)) 
-    \slv_reg0[31]_i_2 
-       (.I0(s00_axi_awvalid),
-        .I1(S_AXI_AWREADY),
-        .I2(S_AXI_WREADY),
-        .I3(s00_axi_wvalid),
-        .O(slv_reg_wren__2));
-  LUT4 #(
     .INIT(16'h0200)) 
     \slv_reg0[7]_i_1 
        (.I0(slv_reg_wren__2),
@@ -1022,7 +1008,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
-        .Q(\slv_reg0_reg_n_0_[0] ),
+        .Q(slv_reg0[0]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[10] 
        (.C(s00_axi_aclk),
@@ -1088,7 +1074,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[1]),
-        .Q(\slv_reg0_reg_n_0_[1] ),
+        .Q(slv_reg0[1]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[20] 
        (.C(s00_axi_aclk),
@@ -1154,7 +1140,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
-        .Q(\slv_reg0_reg_n_0_[2] ),
+        .Q(slv_reg0[2]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[30] 
        (.C(s00_axi_aclk),
@@ -1172,37 +1158,37 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
-        .Q(\slv_reg0_reg_n_0_[3] ),
+        .Q(slv_reg0[3]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[4] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
-        .Q(\slv_reg0_reg_n_0_[4] ),
+        .Q(slv_reg0[4]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[5] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
-        .Q(\slv_reg0_reg_n_0_[5] ),
+        .Q(slv_reg0[5]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[6] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
-        .Q(\slv_reg0_reg_n_0_[6] ),
+        .Q(slv_reg0[6]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[7] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[7]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
-        .Q(\slv_reg0_reg_n_0_[7] ),
+        .Q(slv_reg0[7]),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[8] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[15]_i_1_n_0 ),
         .D(s00_axi_wdata[8]),
-        .Q(enable),
+        .Q(\slv_reg0_reg_n_0_[8] ),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg0_reg[9] 
        (.C(s00_axi_aclk),
@@ -1235,6 +1221,14 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
         .I3(p_0_in[0]),
         .O(\slv_reg1[31]_i_1_n_0 ));
   LUT4 #(
+    .INIT(16'h8000)) 
+    \slv_reg1[31]_i_2 
+       (.I0(s00_axi_awvalid),
+        .I1(S_AXI_AWREADY),
+        .I2(S_AXI_WREADY),
+        .I3(s00_axi_wvalid),
+        .O(slv_reg_wren__2));
+  LUT4 #(
     .INIT(16'h2000)) 
     \slv_reg1[7]_i_1 
        (.I0(slv_reg_wren__2),
@@ -1246,7 +1240,7 @@ module design_1_lcd_controller_0_0_lcd_controller_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
-        .Q(slv_reg1[0]),
+        .Q(\slv_reg1_reg_n_0_[0] ),
         .R(axi_awready_i_1_n_0));
   FDRE \slv_reg1_reg[10] 
        (.C(s00_axi_aclk),

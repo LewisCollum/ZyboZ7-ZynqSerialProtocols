@@ -12,5 +12,4 @@ rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A818A0A"} -index 0
 dow C:/Users/ulab/project_5/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.sdk/I2C-SPI/Debug/I2C-SPI.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A818A0A"} -index 0
-con
+bpadd -addr &main

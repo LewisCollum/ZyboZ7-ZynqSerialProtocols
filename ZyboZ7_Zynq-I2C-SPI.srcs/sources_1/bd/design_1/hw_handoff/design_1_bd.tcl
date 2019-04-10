@@ -166,6 +166,7 @@ proc create_root_design { parentCell } {
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list \
+   CONFIG.C_INTERRUPT_PRESENT {1} \
    CONFIG.GPIO_BOARD_INTERFACE {btns_4bits} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $axi_gpio_0
@@ -824,6 +825,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_timer_0/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
 
   # Create port connections
+  connect_bd_net -net axi_gpio_0_ip2intc_irpt [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins processing_system7_0/IRQ_F2P]
   connect_bd_net -net lcd_controller_0_data [get_bd_pins lcd_controller_0/data] [get_bd_pins pmod_bridge_0/in0_O]
   connect_bd_net -net lcd_controller_0_lcd_e [get_bd_pins lcd_controller_0/lcd_e] [get_bd_pins pmod_bridge_0/in1_O]
   connect_bd_net -net lcd_controller_0_lcd_rs [get_bd_pins lcd_controller_0/lcd_rs] [get_bd_pins pmod_bridge_0/in2_O]
