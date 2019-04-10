@@ -403,9 +403,9 @@ begin
     port map (
         clk => S_AXI_ACLK,
         data_in => slv_reg0(7 downto 0),
-        enable => slv_reg0(8),
-        command_mode => slv_reg0(9),
-        --busy => slv_reg1(0),
+        enable => slv_reg1(0),
+        command_mode => slv_reg1(1),
+        --busy => slv_reg1(2),
         data => data,
         lcd_e => lcd_e,
         lcd_rs => lcd_rs
