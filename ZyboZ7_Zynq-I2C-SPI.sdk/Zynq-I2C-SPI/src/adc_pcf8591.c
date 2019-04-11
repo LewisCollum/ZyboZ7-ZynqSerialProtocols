@@ -27,9 +27,13 @@ void pcfADC_setChannel(unsigned char channel) {
 }
 
 unsigned char pcfADC_getSample() {
-	unsigned char sample;
-	XIicPs_MasterRecvPolled(&i2c_controller, (uint8_t*) &sample, 1, address);
-	return sample;
+	unsigned char sample[2];
+	XIicPs_MasterRecvPolled(&i2c_controller, (unsigned char*) &sample, 2, address);
+	return sample[1];
+}
+
+void pcfADC_fillSampleBuffer(unsigned char* buffer, unsigned char numberOfSamples) {
+	XIicPs_MasterRecvPolled(&i2c_controller, buffer, numberOfSamples, address);
 }
 
 

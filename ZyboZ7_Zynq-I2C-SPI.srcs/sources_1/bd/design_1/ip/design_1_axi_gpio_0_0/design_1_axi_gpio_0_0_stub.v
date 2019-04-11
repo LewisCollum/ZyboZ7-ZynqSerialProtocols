@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Thu Apr  4 20:42:59 2019
+// Date        : Wed Apr 10 12:20:58 2019
 // Host        : pluto running 64-bit unknown
 // Command     : write_verilog -force -mode synth_stub
 //               /home/charon/vivado/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.v
@@ -17,8 +17,9 @@
 module design_1_axi_gpio_0_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr, 
   s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, s_axi_wready, 
   s_axi_bresp, s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arvalid, s_axi_arready, 
-  s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, ip2intc_irpt, gpio_io_i)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,ip2intc_irpt,gpio_io_i[3:0]" */;
+  s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, ip2intc_irpt, gpio_io_i, gpio2_io_i, 
+  gpio2_io_o, gpio2_io_t)
+/* synthesis syn_black_box black_box_pad_pin="s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,ip2intc_irpt,gpio_io_i[3:0],gpio2_io_i[3:0],gpio2_io_o[3:0],gpio2_io_t[3:0]" */;
   input s_axi_aclk;
   input s_axi_aresetn;
   input [8:0]s_axi_awaddr;
@@ -40,4 +41,7 @@ module design_1_axi_gpio_0_0(s_axi_aclk, s_axi_aresetn, s_axi_awaddr,
   input s_axi_rready;
   output ip2intc_irpt;
   input [3:0]gpio_io_i;
+  input [3:0]gpio2_io_i;
+  output [3:0]gpio2_io_o;
+  output [3:0]gpio2_io_t;
 endmodule

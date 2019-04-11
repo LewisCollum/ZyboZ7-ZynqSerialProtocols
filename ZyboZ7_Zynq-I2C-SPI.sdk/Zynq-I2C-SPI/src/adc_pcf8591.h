@@ -6,6 +6,7 @@
 void pcfADC_setupWithBaseAddress();
 void pcfADC_setupWithaddress(unsigned char address);
 unsigned char pcfADC_getSample();
+void pcfADC_fillSampleBuffer(unsigned char* buffer, unsigned char numberOfSamples);
 void pcfADC_setChannel(unsigned char channel);
 
 #endif /* SRC_ADC_PCF8591_H_ */

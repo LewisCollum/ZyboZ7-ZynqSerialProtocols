@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Thu Apr  4 20:42:23 2019
+// Date        : Wed Apr 10 12:21:13 2019
 // Host        : pluto running 64-bit unknown
 // Command     : write_verilog -force -mode synth_stub
 //               /home/charon/vivado/ZyboZ7_Zynq-I2C-SPI/ZyboZ7_Zynq-I2C-SPI.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.v

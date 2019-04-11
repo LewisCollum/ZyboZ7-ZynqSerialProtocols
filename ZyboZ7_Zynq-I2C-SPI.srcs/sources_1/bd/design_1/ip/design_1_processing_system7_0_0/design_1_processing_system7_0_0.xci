@@ -1558,14 +1558,19 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_ENET_RESET_POLARITY" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_ENET_RESET_SELECT" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_4K_TIMER" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_GPIO" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_I2C0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_SPI1" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_TTC0" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_EMIO_TTC1" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_ENET0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_GPIO" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_I2C0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_QSPI" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_SDIO0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_SPI1" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_TTC0" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_TTC1" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_UART1" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_EN_USB0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
@@ -1580,6 +1585,8 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FPGA_FCLK1_ENABLE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FPGA_FCLK2_ENABLE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FPGA_FCLK3_ENABLE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_ENABLE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_WIDTH" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_MIO_GPIO_ENABLE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_MIO_GPIO_IO" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
@@ -1878,6 +1885,17 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TPIU_PERIPHERAL_CLKSRC" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TPIU_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TPIU_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_CLK0_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_CLK1_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_CLK2_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC0_TTC0_IO" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK0_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK1_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_CLK2_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC1_TTC1_IO" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_TTC_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART1_BAUD_RATE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART1_GRP_FULL_ENABLE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_UART1_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
